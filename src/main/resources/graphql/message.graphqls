@@ -1,0 +1,21 @@
+type EMessage {
+    id: ID
+    subject: String
+    description: String
+    category: String
+    read: Boolean
+    sentDateTime:String
+    sender: Sender
+}
+
+# The Root Query for the application
+extend type Query {
+    allMessage: [EMessage]
+    message(id: ID): EMessage
+}
+
+# The Root Mutation for the application
+extend type Mutation {
+    createMessage(subject: String, description: String, category: String, senderEmail:String): String
+}
+

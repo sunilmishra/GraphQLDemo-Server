@@ -1,0 +1,15 @@
+type Sender {
+    email:String
+    firstName:String
+    lastName:String
+}
+
+# The Root Query for the application
+type Query {
+    allSender: [Sender]
+}
+
+# The Root Mutation for the application
+type Mutation {
+    createSender(email: String, firstName: String, lastName: String): String
+}
