@@ -120,7 +120,8 @@ type Query {
 type Mutation {
     createSender(email: String, firstName: String,
                  lastName: String): String
-}```
+}
+```
 
 **#References:**
 https://graphql.org
