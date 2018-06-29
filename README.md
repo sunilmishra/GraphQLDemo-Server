@@ -51,7 +51,7 @@ So GraphQL fixes this problem because it allows access to an arbitrary set of da
 
 It's like a GET request, Every time we want to access the data for reading, We make use of Queries.
 We can specify as many queries as we want in our GraphQL Application and we can call those queries as needed.,
-We can pass 'optional' or  'required parameters to the query as well, And we can use those parameters internally to filter and return the correct data.
+We can pass ```optional``` or  ```required``` parameters to the query as well, And we can use those parameters internally to filter and return the correct data.
 Anyways, Query doesn't fetch the data, It acts as a proxy, It processes the incoming GraphQL request and calls the 'resolve' method and passes along all the parameters, Its the job of resolve method to fetch the data from any source and return it back to the query.
 The query then checks the data for correct field types and returns it back to the client.
 
