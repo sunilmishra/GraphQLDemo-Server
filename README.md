@@ -128,7 +128,7 @@ type Mutation {
 }
 ```
 
-**#How to test? **
+**How to test?**
 
 http://localhost:8080/graphiql
 
