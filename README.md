@@ -147,11 +147,14 @@ query {
 ```
 
 ```
+query {
  message(id:"5b3658d1cf56c459c6ce07fa") {
      id
     subject
   }
+}
 ```
+
 ```
 mutation {
 createMessage(subject: "GraphQL new Message",
