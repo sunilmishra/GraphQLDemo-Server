@@ -128,7 +128,41 @@ type Mutation {
 }
 ```
 
+**#How to test? **
+
+http://localhost:8080/graphiql
+
+```
+query {
+  allMessage {
+    id
+    subject
+    description
+    sender {
+      firstName
+      lastName
+    }
+  }
+}
+```
+
+```
+ message(id:"5b3658d1cf56c459c6ce07fa") {
+     id
+    subject
+  }
+```
+```
+mutation {
+createMessage(subject: "GraphQL new Message",
+    		description: "This is new description 1",
+   			category:"Social")
+}
+```
+
+
 **#References:**
+
 https://graphql.org
 
 https://www.howtographql.com
