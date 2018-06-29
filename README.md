@@ -21,7 +21,7 @@ So GraphQL fixes this problem because it allows access to an arbitrary set of da
 1. Create spring boot application (https://start.spring.io) and open it in your favorite IDE, mostly IntelliJ
 2. Setup your MongoDB (https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x)
 3. Add below lines to your POM.xml and sync. you can use the latest version.
-
+```
 <!-- Graph QL -->
 <dependency>
  <groupId>com.graphql-java</groupId>
@@ -40,6 +40,7 @@ So GraphQL fixes this problem because it allows access to an arbitrary set of da
  <artifactId>graphql-java-tools</artifactId>
  <version>5.1.0</version>
 </dependency>
+```
 
 4. Let's start writing code.
  
