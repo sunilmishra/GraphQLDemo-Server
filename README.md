@@ -88,6 +88,7 @@ Here we create a 'RootQuery' (name can be anything) and here we specify all the 
 Similarly, We create a 'RootMutation' and specify all the mutations we have written.
 Finally, we return a GraphQLSchema with this 'query' and  'mutation' object.
  
+ **emessage.graphqls**
 ```
 type EMessage {
     id: ID
@@ -108,6 +109,9 @@ extend type Mutation {
     createMessage(subject: String, description: String,
                   category: String, senderEmail:String): String
 }
+```
+**sender.graphqls**
+```
 type Sender {
     email:String
     firstName:String
